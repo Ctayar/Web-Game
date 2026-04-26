@@ -3,6 +3,7 @@ const questions = [
     id: 1,
     question: "What is the capital of Finland?",
     answer: "Helsinki",
+    
     keywords: [
         "capital",
         "Finland",
