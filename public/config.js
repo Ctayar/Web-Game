@@ -9,7 +9,7 @@ const CONFIG = {
   FIELDS: {
     LOGIN: ["email", "password"],
     REGISTER: ["email", "password", "name"],
-    QUESTION: ["question", "answer", "date", "content", "keywords", "image"],
+    QUESTION: ["question", "answer", "keywords", "image"],
   },
   POSTS_PER_PAGE: 5,
   STORAGE_KEY: "jwt_token",

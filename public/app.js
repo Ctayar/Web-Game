@@ -33,7 +33,7 @@ async function apiFetch(route, options = {}) {
   if (token) headers["Authorization"] = `Bearer ${token}`;
   const res = await fetch(`${CONFIG.API_URL}${route}`, { ...options, headers });
   const data = await res.json();
-  if (!res.ok) throw new Error(data.error || data.msg || "Request failed");
+  if (!res.ok) throw new Error(data.error || data.message || "Request failed");
   return data;
 }
 
@@ -312,6 +312,7 @@ async function showQuestionForm(qId) {
         <div class="form-group">
           <label for="q-answer">Answer</label>
           <textarea id="q-answer" rows="4" required>${q.answer}</textarea>
+
         </div>
         <div class="form-group">
           <label for="q-keywords">Keywords (comma-separated)</label>
